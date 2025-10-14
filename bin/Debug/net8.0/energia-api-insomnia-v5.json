@@ -1,0 +1,126 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2024-03-19T12:00:00.000Z",
+  "__export_source": "insomnia.desktop.app:v5",
+  "resources": [
+    {
+      "_id": "req_root",
+      "parentId": "wrk_energia_api",
+      "modified": 1710849600000,
+      "created": 1710849600000,
+      "url": "{{ _.base_url }}",
+      "name": "Root",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1710849600000,
+      "_type": "request"
+    },
+    {
+      "_id": "wrk_energia_api",
+      "parentId": null,
+      "modified": 1710849600000,
+      "created": 1710849600000,
+      "name": "Energia API",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "env_base",
+      "parentId": "wrk_energia_api",
+      "modified": 1710849600000,
+      "created": 1710849600000,
+      "name": "Base Environment",
+      "data": {
+        "base_url": "http://localhost:5028"
+      },
+      "dataPropertyOrder": {
+        "&": ["base_url"]
+      },
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1710849600000,
+      "_type": "environment"
+    },
+    {
+      "_id": "req_listar_consumos",
+      "parentId": "wrk_energia_api",
+      "modified": 1710849600000,
+      "created": 1710849600000,
+      "url": "{{ _.base_url }}/api/consumo",
+      "name": "Listar Consumos",
+      "description": "Lista os dados de consumo energético com paginação",
+      "method": "GET",
+      "body": {},
+      "parameters": [
+        {
+          "name": "skip",
+          "value": "0",
+          "description": "Número de registros para pular"
+        },
+        {
+          "name": "take",
+          "value": "10",
+          "description": "Número de registros para retornar"
+        }
+      ],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1710849600000,
+      "_type": "request"
+    },
+    {
+      "_id": "req_listar_alertas",
+      "parentId": "wrk_energia_api",
+      "modified": 1710849600000,
+      "created": 1710849600000,
+      "url": "{{ _.base_url }}/api/alertas",
+      "name": "Listar Alertas",
+      "description": "Lista os alertas ativos",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1710849600000,
+      "_type": "request"
+    },
+    {
+      "_id": "req_desligar_sensores",
+      "parentId": "wrk_energia_api",
+      "modified": 1710849600000,
+      "created": 1710849600000,
+      "url": "{{ _.base_url }}/api/sensores/desligar",
+      "name": "Desligar Sensores Ociosos",
+      "description": "Desliga os sensores que estão ociosos",
+      "method": "POST",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1710849600000,
+      "_type": "request"
+    },
+    {
+      "_id": "req_relatorio_diario",
+      "parentId": "wrk_energia_api",
+      "modified": 1710849600000,
+      "created": 1710849600000,
+      "url": "{{ _.base_url }}/api/relatorios/diario",
+      "name": "Relatório Diário",
+      "description": "Retorna o relatório diário de consumo",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1710849600000,
+      "_type": "request"
+    }
+  ]
+} 

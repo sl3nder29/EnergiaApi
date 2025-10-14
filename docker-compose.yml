@@ -1,0 +1,81 @@
+version: '3.8'
+
+# Define redes personalizadas para isolamento
+networks:
+  energia-network:
+    driver: bridge
+
+# Define volumes para persistência de dados
+volumes:
+  sqldata:
+    driver: local
+  app-logs:
+    driver: local
+
+services:
+  # Aplicação API
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: energia-api
+    ports:
+      - "5028:80"
+    depends_on:
+      - db
+    environment:
+      - ASPNETCORE_ENVIRONMENT=${ASPNETCORE_ENVIRONMENT:-Development}
+      - ASPNETCORE_URLS=http://+:80
+      - ConnectionStrings__DefaultConnection=Server=db;Database=EnergiaDB;User Id=sa;Password=${DB_PASSWORD:-YourStrong!Passw0rd};TrustServerCertificate=True;
+      - Jwt__Key=${JWT_KEY:-MinhaChaveSecretaSuperSeguraParaJWT2024!@#$%}
+      - Jwt__Issuer=${JWT_ISSUER:-EnergiaApi}
+      - Jwt__Audience=${JWT_AUDIENCE:-EnergiaApiUsers}
+    volumes:
+      - app-logs:/app/logs
+    networks:
+      - energia-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:80/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Banco de dados SQL Server
+  db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: energia-db
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=${DB_PASSWORD:-YourStrong!Passw0rd}
+      - MSSQL_PID=Express
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqldata:/var/opt/mssql
+      - ./init-scripts:/docker-entrypoint-initdb.d
+    networks:
+      - energia-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "/opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P ${DB_PASSWORD:-YourStrong!Passw0rd} -Q 'SELECT 1'"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
+
+  # Nginx como proxy reverso (opcional)
+  nginx:
+    image: nginx:alpine
+    container_name: energia-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - api
+    networks:
+      - energia-network
+    restart: unless-stopped 

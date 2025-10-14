@@ -1,0 +1,100 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\lucas\\Desktop\\cap7entrega\\EnergiaApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{70F2CAF4-C116-465F-97B8-7668864FA631}|EnergiaApi.csproj|c:\\users\\lucas\\desktop\\cap7entrega\\energiaapi\\controllers\\relatorioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70F2CAF4-C116-465F-97B8-7668864FA631}|EnergiaApi.csproj|solutionrelative:controllers\\relatorioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F2CAF4-C116-465F-97B8-7668864FA631}|EnergiaApi.csproj|c:\\users\\lucas\\desktop\\cap7entrega\\energiaapi\\controllers\\sensorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70F2CAF4-C116-465F-97B8-7668864FA631}|EnergiaApi.csproj|solutionrelative:controllers\\sensorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F2CAF4-C116-465F-97B8-7668864FA631}|EnergiaApi.csproj|c:\\users\\lucas\\desktop\\cap7entrega\\energiaapi\\controllers\\alertascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70F2CAF4-C116-465F-97B8-7668864FA631}|EnergiaApi.csproj|solutionrelative:controllers\\alertascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F2CAF4-C116-465F-97B8-7668864FA631}|EnergiaApi.csproj|c:\\users\\lucas\\desktop\\cap7entrega\\energiaapi\\controllers\\consumocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70F2CAF4-C116-465F-97B8-7668864FA631}|EnergiaApi.csproj|solutionrelative:controllers\\consumocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lucas\\source\\repos\\EnergiaApi.Tests\\UnitTest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RelatoriosController.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\Desktop\\cap7entrega\\EnergiaApi\\Controllers\\RelatoriosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RelatoriosController.cs",
+              "ToolTip": "C:\\Users\\lucas\\Desktop\\cap7entrega\\EnergiaApi\\Controllers\\RelatoriosController.cs",
+              "RelativeToolTip": "Controllers\\RelatoriosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T23:16:39.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SensoresController.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\Desktop\\cap7entrega\\EnergiaApi\\Controllers\\SensoresController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SensoresController.cs",
+              "ToolTip": "C:\\Users\\lucas\\Desktop\\cap7entrega\\EnergiaApi\\Controllers\\SensoresController.cs",
+              "RelativeToolTip": "Controllers\\SensoresController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T23:16:19.353Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AlertasController.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\Desktop\\cap7entrega\\EnergiaApi\\Controllers\\AlertasController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AlertasController.cs",
+              "ToolTip": "C:\\Users\\lucas\\Desktop\\cap7entrega\\EnergiaApi\\Controllers\\AlertasController.cs",
+              "RelativeToolTip": "Controllers\\AlertasController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T23:16:02.702Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ConsumoController.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\Desktop\\cap7entrega\\EnergiaApi\\Controllers\\ConsumoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ConsumoController.cs",
+              "ToolTip": "C:\\Users\\lucas\\Desktop\\cap7entrega\\EnergiaApi\\Controllers\\ConsumoController.cs",
+              "RelativeToolTip": "Controllers\\ConsumoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T23:15:33.423Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\source\\repos\\EnergiaApi.Tests\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\source\\repos\\EnergiaApi.Tests\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\lucas\\source\\repos\\EnergiaApi.Tests\\UnitTest1.cs",
+              "RelativeToolTip": "..\\..\\..\\source\\repos\\EnergiaApi.Tests\\UnitTest1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T23:10:43.797Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

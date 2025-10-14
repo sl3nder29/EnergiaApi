@@ -1,0 +1,27 @@
+version: '3.8'
+
+# Configuração para ambiente de produção
+services:
+  api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ConnectionStrings__DefaultConnection=Server=db;Database=EnergiaDB_Production;User Id=sa;Password=${DB_PASSWORD};TrustServerCertificate=True;
+    ports:
+      - "5030:80"
+    container_name: energia-api-production
+    restart: always
+
+  db:
+    environment:
+      - SA_PASSWORD=${DB_PASSWORD}
+    container_name: energia-db-production
+    ports:
+      - "1435:1433"
+    restart: always
+
+  nginx:
+    ports:
+      - "80:80"
+      - "443:443"
+    container_name: energia-nginx-production
+    restart: always

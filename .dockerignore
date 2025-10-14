@@ -1,0 +1,46 @@
+# Arquivos de build
+bin/
+obj/
+*.user
+*.suo
+*.cache
+
+# Arquivos de desenvolvimento
+.vs/
+.vscode/
+*.swp
+*.swo
+
+# Arquivos de log
+*.log
+logs/
+
+# Arquivos temporários
+*.tmp
+*.temp
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de teste
+Tests/
+*.Tests.csproj
+
+# Arquivos de documentação
+README.md
+*.md
+
+# Arquivos de configuração local
+.env
+.env.local
+appsettings.Development.json
+
+# Arquivos Git
+.git/
+.gitignore
+
+# Arquivos Docker
+Dockerfile*
+docker-compose*.yml
+.dockerignore
